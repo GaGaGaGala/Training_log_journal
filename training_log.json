@@ -9,12 +9,18 @@
         "date": "2024-11-28 00:02:41",
         "exercise": "\u0442\u044f\u0433\u0430",
         "weight": "15",
-        "repetitions": "15"
+        "repetitions": "10"
     },
     {
         "date": "2024-11-28 00:50:10",
         "exercise": "\u043e\u0442\u0436\u0438\u043c\u0430\u043d\u0438\u0435",
         "weight": "5",
         "repetitions": "20"
+    },
+    {
+        "date": "2024-11-29 12:08:02",
+        "exercise": "\u0442\u044f\u0433\u044f",
+        "weight": "20",
+        "repetitions": "10"
     }
 ]

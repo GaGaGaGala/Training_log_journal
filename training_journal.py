@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import ttk, Toplevel, messagebox, font
 import json
 from datetime import datetime
-import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 import csv
@@ -10,6 +9,7 @@ import csv
 
 # Файл для сохранения данных
 data_file = 'training_log.json'
+
 
 def load_data():
     """Загрузка данных о тренировках из файла."""
@@ -19,10 +19,12 @@ def load_data():
     except (FileNotFoundError, json.JSONDecodeError):
         return []
 
+
 def save_data(data):
     """Сохранение данных о тренировках в файл."""
     with open(data_file, 'w') as file:
         json.dump(data, file, indent=4)
+
 
 class TrainingLogApp:
     def __init__(self, root):
@@ -30,6 +32,7 @@ class TrainingLogApp:
         root.title("Дневник тренировок")
         self.create_widgets()
         self.state = {'edit': False}
+
     def create_widgets(self):
         """
          Создает виджеты для ввода данных о тренировке (название упражнения, вес, количество повторений),
@@ -354,6 +357,7 @@ def main():
     root = tk.Tk()
     app = TrainingLogApp(root)
     root.mainloop()
+
 
 if __name__ == "__main__":
     main()
